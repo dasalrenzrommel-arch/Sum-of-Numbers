@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Numbers</title>
+</head>
+<body>
+
+    <h2>Sum of Numbers</h2>
+
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="calculateSum()">Calculate</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateSum() {
+            let num = Number(document.getElementById("number").value);
+            let sum = 0;
+
+            for (let i = 1; i <= num; i++) {
+                sum += i;
+            }
+
+            document.getElementById("result").innerHTML =
+                "Sum: " + sum;
+        }
+    </script>
+
+</body>
+</html>
